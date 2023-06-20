@@ -1,0 +1,5 @@
+-----------------------
+.plan for June 20, 2023
+-----------------------
+
+*	get through chapter five, then start looking at some other code bases this afternoon
