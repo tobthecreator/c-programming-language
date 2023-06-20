@@ -1,0 +1,7 @@
+-----------------------
+.plan for June 19, 2023
+-----------------------
+
+*	plan for the day is to finish chapter one and get my env setup in vs code
++	new hotkey for switching between the terminal and the editor using cmd+j
+?	are there lambdas in C?

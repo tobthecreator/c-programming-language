@@ -77,3 +77,69 @@ long integers are at least 32 bits. on some machines int and long are the same s
 We also have doubles, which is a double precision float.
 
 Single quotes are specific characters in ASCII. They're `character constants`.
+
+## arrays
+
+We're allocating memory space specifically here, so remember we have to declare array size.
+
+c - '0' works because chars are just small integers, so char variables and cosntants are identical to ints in aritmetic expressions.
+
+## functions
+
+Functions are how we encapusulate computation. With a proper function, you can ignore how a job and simply know that it is done properly, and what was done.
+
+You will often see small functions defined even if used only once simply to name a behavior in the code.
+
+Functions can appear in any order, probably because this is a compiled language not interpreted.
+
+Use parameter to describe the variable declared in the function definition.  
+Argument is what we pass to a parameter.
+
+Before main, in the example file, they defined something. A function prototype.
+
+Function prototypes make it easier for the compiler to detect errors in the number of arguments, and the types of the arguments. going to ask GPT about that.
+
+# call by value
+
+Oh boy
+
+All function args in C are pass "by value". So everything passed to the function are temporary vars, not the originals.
+
+This is in stark contrast to "call by reference" langugaes.
+
+When necessary, you can arrange for a function to alter a variable in a calling routine.
+
+Oh boy.
+
+The call must provide the address of the variable to be set. This is a pointer.
+
+You have to declare that an arg is a pointer.
+
+Arrays are a notable exception. Arrays are not copied. You get the address of the beginning of the array.
+
+## character arrays
+
+while there is another line
+if the line is longer the the known longest line
+save ithe line
+save it's length
+
+print the longest line
+
+`\0` is a null character.
+
+When something like "hello!\n" is stored in C, it is actually [h, e, l, l, o, !, \n, \0]
+
+## external variables and scope
+
+goes over normal function scoping.
+
+goes over global variables. global variables different from symbolic variables from earlier in that they can be updated and changed, instead of being static.
+
+There are also `extern` declarations. These are not commonly used.
+
+If a global variable is declared in file1 and then needed in file 2, then it needs `extern`. Typically we collect all `extern` variables and functions into a header file, then use `#include` to transfer them into a new source file.
+
+We've covered the "convential core" of C now.
+
+With these building blocks, we grow :)
